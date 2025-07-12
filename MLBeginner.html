@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Metacore</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/courses/Metacore.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+/* Transition and initial transparent state */
+.navbar.transition-navbar {
+    transition: background-color 0.4s, color 0.4s;
+}
+.navbar.transparent {
+    background-color: transparent !important;
+}
+.navbar.scrolled,
+.navbar.show-bg {
+    background-color: #000 !important;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #c00000 !important;
+}
+.navbar-nav .nav-link.active {
+    color: #c00000 !important;
+}
+
+</style>
+<style>
+    ul.list-styled {
+        color: black; /* Text color */
+        list-style-type: disc;
+    }
+
+    ul.list-styled li::marker {
+        color: red; /* Marker color */
+    }
+
+</style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0 transition-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand px-4 px-lg-5" href="index.html">
+            <img src="img/Metacore_Logo.jpg" alt="logo" height="50">
+        </a>
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://wa.me/919373478923" class="btn btn-primary px-3 py-0 me-3 my-2 rounded-pill d-flex justify-content-center align-items-center text-center" style="height: auto; line-height: 1.6;">WhatsApp</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Navbar End -->
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    const collapse = document.querySelector("#navbarCollapse");
+    const links = document.querySelectorAll(".nav-link");
+
+    function updateNavbarStyle() {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+            navbar.classList.remove("transparent");
+        } else if (!collapse.classList.contains("show")) {
+            navbar.classList.add("transparent");
+            navbar.classList.remove("scrolled", "show-bg");
+        }
+    }
+
+    // On toggler click
+    document.querySelector(".navbar-toggler").addEventListener("click", () => {
+        if (!collapse.classList.contains("show")) {
+            navbar.classList.add("show-bg");
+            navbar.classList.remove("transparent");
+        } else {
+            navbar.classList.remove("show-bg");
+            updateNavbarStyle();
+        }
+    });
+
+    // On scroll
+    window.addEventListener("scroll", updateNavbarStyle);
+    updateNavbarStyle();
+
+    // Add active class to selected link
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            links.forEach(l => l.classList.remove("active"));
+            link.classList.add("active");
+        });
+    });
+});
+</script>
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Courses</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="courses.html">Courses</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Machine Learning Beginner</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container bg-white shadow p-5 rounded">
+    <div class="row align-items-center">
+            <h2 class="mb-5" style="color: #c00000; font-family: sans-serif;">Introduction to Machine Learning Beginner</h2>
+        <!-- Left Content Column -->
+        <div class="col-lg-7">
+            <h3 class="text-primary mb-3">Overview:</h3>
+            <ul class="list-styled">
+            <li>Develop skills in model tuning, feature engineering, and using tools like scikit-learn and TensorFlow for predictive analytics.</li>
+            <li>Duration: 1 Month</li>
+            </ul>
+            <h4>Topics Covered:</h4>
+            <ul class="list-styled">
+            <li>ML Basics</li>
+            <li>Python</li>
+            <li>Data</li>
+        </ul>
+
+        <!-- Learning Outcome -->
+        <h3 class="text-primary mb-3">Learning Outcome</h3>
+        <ul class="list-styled">
+            <li>Understand ML basics, data preprocessing, and simple models. Start building projects using real datasets.</li>
+        </ul>
+            <a href="https://wa.me/919373478923?text=Hello%20Metacore%20team%2C%20I%20am%20interested%20in%20Machine%20Learning%20Beginner%20course%20and%20want%20to%20know%20about%20more%20details." class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Confirm Enrollment</a>
+        </div>
+
+        <!-- Right Image Column -->
+        <div class="col-lg-5 text-center">
+            <img src="img/courses/ML.jpg" alt="image" class="img-fluid rounded" style="size: 900px;">
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a class="logo-footer" href="index.html">
+                        <img class="img-fluid mb-3" src="img/Metacore_Logo.jpg" alt="Metacore Logo">
+                    </a>
+                    <p>Transform your career with Metacore’s expert-led IT training. Enroll in our cutting-edge courses and gain the skills to thrive in today’s digital world.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Our Branches</h4>
+                    <a style="color: rgb(255, 255, 255);" class="text-color" href="https://maps.app.goo.gl/KY4sau5cT5vyHpgXA">Panjim Office: 4th Floor, Office No. 401, Ambrosia, Patto Centre, Panaji, Goa 403001</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <a style="color: rgb(255, 255, 255);" class="text-color" href="tel:919373478923">
+                    Phone:<br>+91 93734 78923
+                    </a><br>
+                    <a style="color: rgb(255, 255, 255);" class="text-color" href="mailto:metacorecomputeracademy@gmail.com">
+                    Email:<br>metacorecomputeracademy@gmail.com
+            </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Social Media</h4>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/metacorecomputeracademy/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright py-3 d-flex justify-content-center">
+                <p class="mb-0 text-center">
+                <script>document.write(new Date().getFullYear())</script>
+                &copy; Copyright by
+                <a style="color: #c00000;" href="https://service.avanteia.com/">Avanteia</a>.
+                All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

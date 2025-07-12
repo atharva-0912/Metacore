@@ -200,10 +200,10 @@ h6, .body__overlay {
   --bd-placeholder: rgba(30, 30, 30, 0.4);
   --bd-body-primary: #FFFFFF;
   --bd-primary: #800000;
-  --bd-secondary: #FFB800;
+  --bd-secondary: #b91818;
   --bd-success: #800000;
   --bd-info: #0dcaf0;
-  --bd-warning: #ffc107;
+  --bd-warning: #c92a25e0;
   --bd-danger: #FF0033;
   --bd-teal: #20c997;
   --bd-body-text: #808080;
@@ -9551,22 +9551,22 @@ code {
   }
 }
 .bd-header-top.style-three {
-  background-color: var(--bd-secondary);
+  background-color: var(--bd-primary);
 }
 .bd-header-top.style-three .bd-header-top-left ul li:first-child::before {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .bd-header-top.style-three .bd-header-top-left ul li span {
-  color: var(--bd-black);
+  color: var(--bd-white);
 }
 .bd-header-top.style-three .bd-header-top-left ul li a {
-  color: var(--bd-black);
+  color: var(--bd-white);
 }
 .bd-header-top.style-three .bd-header-top-right span {
-  color: var(--bd-black);
+  color: var(--bd-white);
 }
 .bd-header-top.style-three .bd-header-top-right a {
-  color: var(--bd-black);
+  color: var(--bd-white);
 }
 .bd-header-top.style-two {
   background-color: transparent;
@@ -14851,7 +14851,7 @@ code {
   color: var(--bd-white);
 }
 .bd-footer-area.has-footer-space {
-  padding: 190px 0 100px;
+  padding: 150px 0 100px;
 }
 @media (max-width: 575px) {
   .bd-footer-area.has-footer-space {
@@ -26269,6 +26269,74 @@ code {
 .no-csspointerevents .nice-select.open .list {
   display: block;
 }
+
+/*----------------------------------------*/
+/*  cybersecurity-roadmap
+/*----------------------------------------*/
+    
+  .courses-roadmap {
+      background: #f9f9f9;
+    }
+
+    .roadmap-timeline {
+      position: relative;
+      margin: 0 auto;
+      max-width: 800px;
+      padding-left: 20px;
+      border-left: 3px solid #4CAF50;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .timeline-marker {
+      width: 18px;
+      height: 18px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 6px;
+      border: 2px solid #fff;
+      z-index: 2;
+      box-shadow: 0 0 0 4px #19875433;
+    }
+
+    .timeline-box {
+      background-color: #ffffff;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .timeline-box:hover {
+       background-color: #ffe6e6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(255, 77, 77, 0.3); /* soft red shadow */
+    }
+
+    .timeline-box h4 {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .timeline-box ul {
+      font-size: 16px;
+      color: #666;
+    }
+.timeline-marker {
+    width: 18px;
+    height: 18px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 6px;
+    border: 2px solid #fff;
+    z-index: 2;
+    box-shadow: 0 0 0 4px #ff4d4d33; /* soft red glow */
+}
+
 
 /*----------------------------------------*/
 /*  2.11 Range Slider 

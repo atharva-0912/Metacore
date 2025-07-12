@@ -1,247 +1,942 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Metacore</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/courses/Metacore.jpg" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <style>
-/* Transition and initial transparent state */
-.navbar.transition-navbar {
-    transition: background-color 0.4s, color 0.4s;
-}
-.navbar.transparent {
-    background-color: transparent !important;
-}
-.navbar.scrolled,
-.navbar.show-bg {
-    background-color: #000 !important;
-}
-.navbar-nav .nav-link {
-    color: white !important;
-    transition: color 0.3s ease;
-}
-.navbar-nav .nav-link:hover {
-    color: #c00000 !important;
-}
-.navbar-nav .nav-link.active {
-    color: #c00000 !important;
-}
-
-</style>
-<style>
-    ul.list-styled {
-        color: black; /* Text color */
-        list-style-type: disc;
-    }
-
-    ul.list-styled li::marker {
-        color: red; /* Marker color */
-    }
-
-</style>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/Metacore.jpg">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-pro.css">
+    <link rel="stylesheet" href="assets/css/plugins/nouislider.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/icomoon.css">
+    <link rel="stylesheet" href="assets/css/vendor/spacing.css">
+    <link rel="stylesheet" href="assets/css/plugins/apexcharts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0 transition-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand px-4 px-lg-5" href="index.html">
-            <img src="img/Metacore_Logo.jpg" alt="logo" height="50">
-        </a>
-        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <a href="blog.html" class="nav-item nav-link">Blogs</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+    <!-- preloader start -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="bd-preloader-content">
+                    <div class="bd-preloader-logo">
+                        <div class="bd-preloader-circle">
+                            <svg width="190" height="190" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle stroke="#F5F5F5" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
+                                </circle>
+                                <circle stroke="red" cx="190" cy="190" r="180" stroke-width="6" stroke-linecap="round">
+                                </circle>
+                            </svg>
+                        </div>
+                        <img src="assets/images/logo/preloader-icon.png" alt="">
+                    </div>
+                    <p class="bd-preloader-subtitle">Loading...</p>
+                </div>
             </div>
-            <a href="https://wa.me/919373478923" class="btn btn-primary px-3 py-0 me-3 my-2 rounded-pill d-flex justify-content-center align-items-center text-center" style="height: auto; line-height: 1.6;">WhatsApp</a>
         </div>
     </div>
-</nav>
+    <!-- preloader end -->
 
-    <!-- Navbar End -->
+    <!-- Header area start -->
+    <header>
+        <div class="bd-header-top">
+            <div class="bd-header-top-left">
+                <ul>
+                    <li><a href="tel:919373478923"><span><i class="fa-solid fa-phone-volume"></i></span>+91 9373478923</a></li>
+                    <li><a href="mailto:metacorecomputeracademy@gmail.com"><span><i
+                    class="fa-sharp fa-light fa-envelope"></i></span>metacorecomputeracademy@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="bd-header-top-right text-md-end">
+                <a href="#"><span><i class="fa-solid fa-phone-volume"></i></span>Brooklyn, NY 12207, New York</a>
+            </div>
+        </div>
+        <div class="bd-header-area header-style-one" id="header-sticky">
+            <div class="bd-header-inner">
+                <div class="bd-header-left">
+                    <div class="bd-header-logo">
+                        <a href="index.html"><img src="assets/images/logo/Metacore_Logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="bd-header-menu">
+                    <nav class="main-menu bd-mobile-menu-active d-none d-xl-block">
+                        <ul>
+                            <li class="has-mega-menu">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <!-- courses menu -->
+                            <li class="has-mega-menu">
+                                <a href="about.html">About</a>
+                            </li>
+                            <li class="has-mega-menu">
+                                <a href="courses-grid-two.html">Courses</a>
+                            </li>
 
-    <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-    const collapse = document.querySelector("#navbarCollapse");
-    const links = document.querySelectorAll(".nav-link");
+                            <!-- page menu -->
+                            <li class="has-mega-menu">
+                                <a href="blog-grid.html">Blogs</a>
+                            </li>
 
-    function updateNavbarStyle() {
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-            navbar.classList.remove("transparent");
-        } else if (!collapse.classList.contains("show")) {
-            navbar.classList.add("transparent");
-            navbar.classList.remove("scrolled", "show-bg");
-        }
-    }
-
-    // On toggler click
-    document.querySelector(".navbar-toggler").addEventListener("click", () => {
-        if (!collapse.classList.contains("show")) {
-            navbar.classList.add("show-bg");
-            navbar.classList.remove("transparent");
-        } else {
-            navbar.classList.remove("show-bg");
-            updateNavbarStyle();
-        }
-    });
-
-    // On scroll
-    window.addEventListener("scroll", updateNavbarStyle);
-    updateNavbarStyle();
-
-    // Add active class to selected link
-    links.forEach(link => {
-        link.addEventListener("click", () => {
-            links.forEach(l => l.classList.remove("active"));
-            link.classList.add("active");
-        });
-    });
-});
-</script>
-
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Courses</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="courses.html">Courses</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">C&C++ Level 1</li>
-                        </ol>
+                            <!-- dashboard menu -->
+                            <li class="has-mega-menu">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
-            </div>
-        </div>
-    </div>
-
-<div class="container bg-white shadow p-5 rounded">
-    <div class="row align-items-center">
-            <h2 class="mb-5" style="color: #c00000; font-family: sans-serif;">Introduction to C&C++ Level 1</h2>
-        <!-- Left Content Column -->
-        <div class="col-lg-7">
-            <h3 class="text-primary mb-3">Overview:</h3>
-            <ul class="list-styled">
-            <li>Learn structured programming with loops, functions, and arrays to build logical and organized code.</li>
-            <li>Duration: 2 Month</li>
-            </ul>
-            <h4>Topics Covered:</h4>
-            <ul class="list-styled">
-            <li>Introduction to Programming</li>
-            <li>Basics of C Programming</li>
-            <li>Loops and Functions</li>
-            <li>Arrays and Strings</li>
-            <li>Pointers and Memory</li>
-            <li>Structures and File Handling</li>
-        </ul>
-
-        <!-- Learning Outcome -->
-        <h3 class="text-primary mb-3">Learning Outcome</h3>
-        <ul class="list-styled">
-            <li>Deepen your understanding with advanced control structures, arrays, pointers, and memory management. Build logic for problem-solving and basic project development.</li>
-        </ul>
-            <a href="https://wa.me/919373478923?text=Hello%20Metacore%20team%2C%20I%20am%20interested%20in%20C&C++%20Programming%20Level%201%20course%20and%20want%20to%20know%20about%20more%20details." class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Confirm Enrollment</a>
-        </div>
-
-        <!-- Right Image Column -->
-        <div class="col-lg-5 text-center">
-            <img src="img/courses/C&C++.jpg" alt="image" class="img-fluid rounded" style="size: 900px;">
-        </div>
-    </div>
-</div>
-
-
-<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <a class="logo-footer" href="index.html">
-                        <img class="img-fluid mb-3" src="img/Metacore_Logo.jpg" alt="Metacore Logo">
-                    </a>
-                    <p>Transform your career with Metacore’s expert-led IT training. Enroll in our cutting-edge courses and gain the skills to thrive in today’s digital world.</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Our Branches</h4>
-                    <a style="color: rgb(255, 255, 255);" class="text-color" href="https://maps.app.goo.gl/KY4sau5cT5vyHpgXA">Panjim Office: 4th Floor, Office No. 401, Ambrosia, Patto Centre, Panaji, Goa 403001</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <a style="color: rgb(255, 255, 255);" class="text-color" href="tel:919373478923">
-                    Phone:<br>+91 93734 78923
-                    </a><br>
-                    <a style="color: rgb(255, 255, 255);" class="text-color" href="mailto:metacorecomputeracademy@gmail.com">
-                    Email:<br>metacorecomputeracademy@gmail.com
-            </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Social Media</h4>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/metacorecomputeracademy/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                <div class="bd-header-right">
+                    <div class="bd-header-sign-btn">
+                            <a class="bd-btn btn-outline-border-primary h-40px" href="https://wa.me/919373478923">WhatsApp</a>
+                            <a class="bd-btn btn-outline-border-primary h-40px" href="apply-online.html">Apply</a>
+                        </div>
+                    <div class="bd-header-hamburger">
+                        <div class="sidebar-toggle">
+                            <a class="bar-icon" href="javascript:void(0)">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="copyright py-3 d-flex justify-content-center">
-                <p class="mb-0 text-center">
-                <script>document.write(new Date().getFullYear())</script>
-                &copy; Copyright by
-                <a style="color: #c00000;" href="https://service.avanteia.com/">Avanteia</a>.
-                All Rights Reserved.
-                </p>
+    </header>
+    <!-- Header area end -->
+
+    <!-- Offcanvas area start -->
+    <div class="fix">
+        <div class="bd-offcanvas-area">
+            <div class="bd-offcanvas-wrapper">
+                <div class="bd-offcanvas-content">
+                    <div class="bd-mobile-menu-smaller">
+                        <div class="bd-offcanvas-menu mb-30">
+                            <nav></nav>
+                        </div>
+                    </div>
+                    <div class="bd-offcanvas-contact mb-30">
+                        <h4 class="bd-offcanvas-title-meta">Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center gap-10">
+                                <div class="bd-offcanvas-contact-icon">
+                                    <a target="_blank" href="#">
+                                        <i class="fal fa-map-marker-alt"></i></a>
+                                </div>
+                                <div class="bd-offcanvas-contact-text">
+                                    <a target="_blank" href="#">123 Knowledge Lane, Learnville, 54321, USA</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-10">
+                                <div class="bd-offcanvas-contact-icon">
+                                    <a href="tel:919373478923"><i class="far fa-phone"></i></a>
+                                </div>
+                                <div class="bd-offcanvas-contact-text">
+                                    <a href="tel:919373478923">+91 9373478923</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center gap-10">
+                                <div class="bd-offcanvas-contact-icon">
+                                    <a href="mailto:metacorecomputeracademy@gmail.com"><i class="fal fa-envelope"></i></a>
+                                </div>
+                                <div class="bd-offcanvas-contact-text">
+                                    <a href="mailto:metacorecomputeracademy@gmail.com">metacorecomputeracademy@gmail.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bd-offcanvas-social">
+                        <h4 class="bd-offcanvas-title-meta">Follow Us</h4>
+                        <div class="theme-social">
+                            <ul class="social-icon-list">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+    <div class="bd-offcanvas-overlay"></div>
+    <div class="bd-offcanvas-overlay-white"></div>
+    <!-- Offcanvas area start -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- search popup area start here  -->
+    <div class="bd-search-popup-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bd-search-popup">
+                        <div class="bd-search-form">
+                            <form action="#">
+                                <div class="bd-search-input">
+                                    <input type="search" name="search" placeholder="Type here to search ...">
+                                    <div class="bd-search-submit">
+                                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="bd-search-close">
+                                <div class="bd-search-close-btn">
+                                    <button><i class="fa-thin fa-close"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body main wrapper start -->
+    <main>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- breadcrumb area start -->
+        <section class="bd-breadcrumb-area p-relative fix z-index-11">
+            <div class="bd-breadcrumb-bg-two" data-background="assets/images/breadcrumb/breadcrumb-bg-2.webp"></div>
+            <div class="bd-breadcrumb-wrapper p-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="bd-breadcrumb style-two d-flex-center">
+                                <div class="bd-breadcrumb-content">
+                                    <h1 class="bd-breadcrumb-title">C/C++ Programming Course Details</h1>
+                                    <div class="bd-breadcrumb-list">
+                                        <span><a href="index.html">Home</a></span>
+                                        <span class="divider"><i class="fa-regular fa-angle-right"></i></span>
+                                        <a href="courses-grid-two.html">Courses</a>
+                                        <span class="divider"><i class="fa-regular fa-angle-right"></i></span>
+                                        <span class="active">C/C++ Programming Level 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-breadcrumb-shape">
+                        <div class="shape-1"><img src="assets/images/shape/breadcrumb-shape-1.webp" alt="shape"></div>
+                        <div class="shape-3"><img src="assets/images/shape/bulb-shape.webp" alt="shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area end -->
+
+        <!-- course details area start -->
+        <section class="bd-course-details-area bd-course-details-top section-space-bottom">
+            <div class="container">
+                <div class="row gy-30">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8">
+                        <div class="bd-course-details-wrapper mb-30">
+                            <div class="bd-course-details-heading mb-30">
+                                <h2 class="bd-course-details-title mb-5">C/C++ Programming Level 1</h2>
+                            </div>
+                            
+                            <div class="bd-course-details-content mb-30">
+                                <h3 class="bd-course-details-content-title">Description</h3>
+                                <p class="description">Level 1 builds on the basics to introduce core concepts of procedural and object-oriented programming.
+                                    Students explore functions, arrays, strings, pointers, memory management, and the basics of data structures like stacks and queues.
+                                    In C++, learners are introduced to classes, objects, constructors, and encapsulation. Practical assignments strengthen debugging and logical thinking.
+                                    This level prepares learners for internships, competitive programming, or academic projects.</p>
+                            </div>
+                            <div class="bd-course-details-content mb-30">
+                                <h3 class="bd-course-details-content-title">What you'll learn</h3>
+                                <div class="bd-course-details-list-box">
+                                    <div class="bd-course-details-list">
+                                        <ul>
+                                            <li>
+                                                <span class="list-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                                Introduction to Programming
+                                            </li>
+                                            <li>
+                                                <span class="list-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                                Basics of C Programming
+                                            </li>
+                                            <li>
+                                                <span class="list-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                                Loops and Functions
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bd-course-details-list">
+                                        <ul>
+                                            <li>
+                                                <span class="list-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                                Arrays and Strings
+                                            </li>
+                                            <li>
+                                                <span class="list-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                                Pointers and Memory
+                                            </li>
+                                            <li>
+                                                <span class="list-icon success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
+                                                Structures and File Handling
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bd-course-details-content mb-30">
+                                <h3 class="bd-course-details-content-title">Requirements</h3>
+                                <div class="bd-post-details-list">
+                                    <ul>
+                                        <li>
+                                            Basic understanding of computer usage and internet browsing
+                                        </li>
+                                        <li>
+                                            No prior programming knowledge is required
+                                        </li>
+                                        <li>
+                                            A computer with access to the internet
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bd-student-feedback mb-30">
+                                <h3 class="bd-course-details-content-title">Student Feedback</h3>
+                                <div class="bd-review-rating-wrapper">
+                                    <div class="row gy-30 align-items-center">
+                                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                                            <div class="bd-rating-box">
+                                                <div class="bd-rating-box-number">4.9</div>
+                                                <div class="bd-rating-box-icon">
+                                                    <a href="#"><i class="fa fa-star"></i></a>
+                                                    <a href="#"><i class="fa fa-star"></i></a>
+                                                    <a href="#"><i class="fa fa-star"></i></a>
+                                                    <a href="#"><i class="fa fa-star"></i></a>
+                                                    <a href="#"><i class="fa fa-star"></i></a>
+                                                </div>
+                                                <span class="bd-rating-box-title">(233 Reviews)</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+                                            <div class="bd-review-progress-wrapper">
+                                                <!-- Rating for 5 Stars -->
+                                                <div class="bd-review-progress-bar progress-style-2">
+                                                    <div class="bd-review-text">5</div>
+                                                    <div class="single-progress">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bar-bg-3 wow bdFadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-review-meta">
+                                                        <span class="bd-review-percent">82%</span>
+                                                        <span class="bd-review-number">212</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Rating for 4 Stars -->
+                                                <div class="bd-review-progress-bar progress-style-2">
+                                                    <div class="bd-review-text">4</div>
+                                                    <div class="single-progress">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bar-bg-2 wow bdFadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-review-meta">
+                                                        <span class="bd-review-percent">12%</span>
+                                                        <span class="bd-review-number">28</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Rating for 3 Stars -->
+                                                <div class="bd-review-progress-bar progress-style-2">
+                                                    <div class="bd-review-text">3</div>
+                                                    <div class="single-progress">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bar-bg-4 wow bdFadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-review-meta">
+                                                        <span class="bd-review-percent">4%</span>
+                                                        <span class="bd-review-number">9</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Rating for 2 Stars -->
+                                                <div class="bd-review-progress-bar progress-style-2">
+                                                    <div class="bd-review-text">2</div>
+                                                    <div class="single-progress">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bar-bg-5 wow bdFadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-review-meta">
+                                                        <span class="bd-review-percent">1%</span>
+                                                        <span class="bd-review-number">5</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Rating for 1 Star -->
+                                                <div class="bd-review-progress-bar progress-style-2">
+                                                    <div class="bd-review-text">0</div>
+                                                    <div class="single-progress">
+                                                        <div class="progress">
+                                                            <!-- <div class="progress-bar bar-bg-6 wow bdFadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div> -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-review-meta">
+                                                        <span class="bd-review-percent">0%</span>
+                                                        <span class="bd-review-number">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bd-course-detalis-reviews mb-30">
+                                <h3 class="bd-course-details-content-title">Reviews</h3>
+                                <div class="bd-postbox-comment">
+                                    <ul>
+                                        <li>
+                                            <div class="bd-postbox-comment-box d-sm-flex align-items-start">
+                                                <div class="bd-postbox-comment-info">
+                                                    <div class="bd-postbox-comment-avatar">
+                                                        <img src="assets/images/review/review1.jpg" alt="image">
+                                                    </div>
+                                                </div>
+                                                <div class="bd-postbox-comment-text">
+                                                    <div class="d-flex flex-wrap gap-15 align-items-center justify-content-between mb-10">
+                                                        <div class="post-rating">
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-postbox-comment-name">
+                                                        <h5 class="title mb-5"><a href="#">Sejal Kerkar</a></h5>
+                                                        <span class="post-meta"> June 14, 2025</span>
+                                                    </div>
+                                                    <p>Metacore’s Cybersecurity Level 2 program sharpened my technical skills through a practical, 
+                                                        industry-focused curriculum led by experts, preparing me for real-world challenges</p>
+                                                    <div class="bd-postbox-comment-reply">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bd-postbox-comment-box d-sm-flex align-items-start">
+                                                <div class="bd-postbox-comment-info">
+                                                    <div class="bd-postbox-comment-avatar">
+                                                        <img src="assets/images/review/review2.jpg" alt="image">
+                                                    </div>
+                                                </div>
+                                                <div class="bd-postbox-comment-text">
+                                                    <div class="d-flex flex-wrap gap-15 align-items-center justify-content-between mb-10">
+                                                        <div class="post-rating">
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-postbox-comment-name">
+                                                        <h5 class="title mb-5"><a href="#">Amey Bhosle</a></h5>
+                                                        <span class="post-meta"> June 14, 2025</span>
+                                                    </div>
+                                                    <p>Metacore turned our ideas into a beautiful brand. The logo and website match our style perfectly. We’re very happy with their work.</p>
+                                                    <div class="bd-postbox-comment-reply">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="bd-postbox-comment-box d-sm-flex align-items-start">
+                                                <div class="bd-postbox-comment-info">
+                                                    <div class="bd-postbox-comment-avatar">
+                                                        <img src="assets/images/review/review3.jpg" alt="image">
+                                                    </div>
+                                                </div>
+                                                <div class="bd-postbox-comment-text">
+                                                    <div class="d-flex flex-wrap gap-15 align-items-center justify-content-between mb-10">
+                                                        <div class="post-rating">
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                            <a href="#"><i class="fa fa-star"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-postbox-comment-name">
+                                                        <h5 class="title mb-5"><a href="#">Tanish Vast</a></h5>
+                                                        <span class="post-meta"> June 14, 2025</span>
+                                                    </div>
+                                                    <p>Metacore perfectly captured our vision for Classic Café and delivered with creativity and professionalism. 
+                                                        Their branding and digital support helped us stand out and connect better with our customers. Highly recommended!</p>
+                                                    <div class="bd-postbox-comment-reply">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bd-course-detalis-review">
+                                    <div class="bd-course-detalis-reviews mb-30">
+                                <h3 class="bd-course-details-content-title">Your Review</h3>
+                                    <form action="https://formsubmit.co/metacorecomputeracademy@gmail.com" method="POST"></form>
+                                        <div class="row gy-30">
+                                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                                                <div class="bd-postbox-comment-input">
+                                                    <input type="text" placeholder="Name" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                                                <div class="bd-postbox-comment-input">
+                                                    <input type="email" placeholder="Email" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-12">
+                                                <div class="bd-postbox-comment-input mb-15">
+                                                    <textarea placeholder="Your Comment Here..." spellcheck="false"></textarea>
+                                                </div>
+                                                <div class="bd-review-form-rating mb-15">
+                                        <p>Your email address will not be published. Required fields are marked
+                                            *</p>
+                                        <div class="bd-ratings-wrapper">
+                                            <i class="fa fa-star" data-value="1"></i>
+                                            <i class="fa fa-star" data-value="2"></i>
+                                            <i class="fa fa-star" data-value="3"></i>
+                                            <i class="fa fa-star" data-value="4"></i>
+                                            <i class="fa fa-star" data-value="5"></i>
+                                            <input type="hidden" name="rating" value="5">
+                                        </div>
+                                    </div>
+                                                <div class="checkbox-option">
+                                                    <input id="course-check-1" type="checkbox">
+                                                    <label for="course-check-1">Save my name, email, and website in this browser for
+                                                        the next time I comment.</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-12">
+                                                <div class="bd-postbox-comment-btn">
+                                                    <button type="submit" class="bd-btn btn-outline-primary">Submit Review</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4">
+                    <div class="bd-course-sidebar-widget sidebar-right sidebar-sticky">
+                        <div class="bd-course-sidebar-widget-thumb mb-20 p-relative">
+                            <img src="assets/images/course/course-video.webp" alt="image">
+                        </div>
+                        <div class="bd-course-sidebar-widget-list mb-20">
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-filter"></i>
+                                        <span>Level</span>
+                                    </div>
+                                    <div class="video-corse-info">
+                                        <span>Level 1</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-desktop"></i>
+                                        <span>Module</span>
+                                    </div>
+                                    <div class="video-corse-info">
+                                        <span>8 Modules</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-clock"></i>
+                                        <span>Duration</span>
+                                    </div>
+                                    <div class="video-corse-info">
+                                        <span>2 Month</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-th-list"></i>
+                                        <span>Category</span>
+                                    </div>
+                                    <div class="video-corse-info">
+                                        <span>Coading</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-award"></i>
+                                        <span>Certificate</span>
+                                    </div>
+                                    <div class="video-corse-info">
+                                        <span>Yes</span>
+                                    </div>
+                                </li>
+                                <li class="text-center mt-3">
+                                    <a class="bd-btn btn-outline-border-primary h-40px w-100" href="apply-online.html">Enroll Now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- course details area end -->
+
+        <!-- related courses area start -->
+        <section class="bd-related-course-area section-space-bottom">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <div class="bd-section-title-wrapper section-title-space text-center">
+                            <span class="bd-section-subtitle">More Course</span>
+                            <h2 class="bd-section-title">Related Courses</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bd-course-slider">
+                        <div class="swiper courseActive">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="bd-course-wrapper style-two">
+                                        <a href="courses-details.html" class="bd-course-thumb-wrapper bd-course-thumb-style p-relative">
+                                            <div class="bd-course-badge">
+                                                <span class="bd-badge badge-warning">20% Off</span>
+                                            </div>
+                                            <div class="bd-course-thumb-bg bg-1"><img src="assets/images/course/course-bg-1.webp" alt="images"></div>
+                                            <div class="bd-course-thumb-instructor center"><img src="assets/images/course/course-instructor-1.webp" alt="instructor"></div>
+                                            <div class="small-text bg-text-color">Getting Started</div>
+                                            <div class="bd-course-overly-title fs-200 text-white">UI/UX</div>
+                                        </a>
+                                        <div class="bd-course-content">
+                                            <div class="bd-course-meta d-flex-between mb-15">
+                                                <div class="bd-course-tag">
+                                                    <a class="bd-badge badge-outline-light badge-transparent" href="#">Learn
+                                                        Photoshop</a>
+                                                </div>
+                                                <div class="bd-course-lesson">
+                                                    <span><i class="fa-light fa-book"></i> 12 Lessons</span>
+                                                </div>
+                                            </div>
+                                            <h5 class="bd-course-title underline mb-10"><a href="courses-details.html">Mastering
+                                                    Creative Techniques for Graphic Design</a></h5>
+                                            <div class="bd-course-rating d-flex-between flex-wrap gap-15">
+                                                <div class="bd-course-price">
+                                                    <span class="current-price">$1500.00</span>
+                                                </div>
+                                                <div class="bd-course-rating-wrap d-flex align-items-center gap-10">
+                                                    <div class="bd-course-rating-icon fs-14 d-flex rating-color">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="bd-course-rating-text">
+                                                        <span>4.9 (320)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bd-course-full-border"></div>
+                                            <div class="btn-wrap d-flex align-items-center justify-content-between">
+                                                <div class="bd-course-author">
+                                                    <div class="thumb"><img src="assets/images/avatar/avatar.webp" alt="author">
+                                                    </div>
+                                                    <div class="name"><a href="instructor-details.html">John Doe</a></div>
+                                                </div>
+                                                <div class="bd-course-btn">
+                                                    <a class="bd-text-btn" href="courses-details.html">Enroll Now
+                                                        <span class="box-icon">
+                                                <i class="fa-regular fa-arrow-right-long first-icon"></i>
+                                                <i class="fa-regular fa-arrow-right-long second-icon"></i>
+                                            </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bd-course-wrapper style-two">
+                                        <a href="courses-details.html" class="bd-course-thumb-wrapper bd-course-thumb-style p-relative">
+                                            <div class="bd-course-badge">
+                                                <span class="bd-badge badge-primary">FREE</span>
+                                            </div>
+                                            <div class="bd-course-thumb-bg bg-2"><img src="assets/images/course/course-bg-2.webp" alt="images"></div>
+                                            <div class="bd-course-thumb-instructor right"><img src="assets/images/course/course-instructor-2.webp" alt="instructor"></div>
+                                            <div class="bd-course-text-content">
+                                                <div class="text-1 fs-50 mb-5 text-white">JavaScript</div>
+                                                <div class="text-2 fs-50 mb-5 text-white">For Beginners</div>
+                                                <div class="text-3 fs-28 white-bg text-primary pl-10 pr-10 pt-5 pb-5 d-inline-block latter-sp-2 uppercase">
+                                                    Beginner</div>
+                                            </div>
+                                        </a>
+                                        <div class="bd-course-content">
+                                            <div class="bd-course-meta d-flex-between mb-15">
+                                                <div class="bd-course-tag">
+                                                    <a class="bd-badge badge-outline-light badge-transparent" href="#">Learn JS</a>
+                                                </div>
+                                                <div class="bd-course-lesson">
+                                                    <span><i class="fa-light fa-book"></i> 15 Lessons</span>
+                                                </div>
+                                            </div>
+                                            <h5 class="bd-course-title underline mb-10"><a href="courses-details.html">Building
+                                                    Dynamic
+                                                    Websites with JavaScript</a></h5>
+                                            <div class="bd-course-rating d-flex-between flex-wrap gap-15">
+                                                <div class="bd-course-price">
+                                                    <span class="current-price">$1800.00</span>
+                                                    <span class="old-price">$2400.00</span>
+                                                </div>
+                                                <div class="bd-course-rating-wrap d-flex align-items-center gap-10">
+                                                    <div class="bd-course-rating-icon fs-14 d-flex rating-color">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="bd-course-rating-text">
+                                                        <span>4.7 (450)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bd-course-full-border"></div>
+                                            <div class="btn-wrap d-flex align-items-center justify-content-between">
+                                                <div class="bd-course-author">
+                                                    <div class="thumb"><img src="assets/images/avatar/avatar.webp" alt="author">
+                                                    </div>
+                                                    <div class="name"><a href="instructor-details.html">Jane Smith</a></div>
+                                                </div>
+                                                <div class="bd-course-btn">
+                                                    <a class="bd-text-btn" href="courses-details.html">Enroll Now
+                                                        <span class="box-icon">
+                                                <i class="fa-regular fa-arrow-right-long first-icon"></i>
+                                                <i class="fa-regular fa-arrow-right-long second-icon"></i>
+                                            </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bd-course-wrapper style-two">
+                                        <a href="courses-details.html" class="bd-course-thumb-wrapper bd-course-thumb-style p-relative">
+                                            <div class="bd-course-badge">
+                                                <span class="bd-badge badge-danger">50% Off</span>
+                                            </div>
+                                            <div class="bd-course-thumb-bg bg-3"><img src="assets/images/course/course-bg-3.webp" alt="images"></div>
+                                            <div class="bd-course-thumb-instructor right"><img src="assets/images/course/course-instructor-3.webp" alt="instructor"></div>
+                                            <div class="bd-course-text-content">
+                                                <div class="text-1 fs-50 mb-5 text-white">React.js</div>
+                                                <div class="text-2 fs-50 mb-25 text-white">Concepts</div>
+                                                <div class="text-3 fs-28 white-bg text-primary pl-10 pr-10 pt-5 pb-5 d-inline-block latter-sp-2 uppercase">
+                                                    Advanced</div>
+                                            </div>
+                                        </a>
+                                        <div class="bd-course-content">
+                                            <div class="bd-course-meta d-flex-between mb-15">
+                                                <div class="bd-course-tag">
+                                                    <a class="bd-badge badge-outline-light badge-transparent" href="#">Learn
+                                                        React</a>
+                                                </div>
+                                                <div class="bd-course-lesson">
+                                                    <span><i class="fa-light fa-book"></i> 18 Lessons</span>
+                                                </div>
+                                            </div>
+                                            <h5 class="bd-course-title underline mb-10"><a href="courses-details.html">Building
+                                                    Scalable
+                                                    Web Applications with React.js</a></h5>
+                                            <div class="bd-course-rating d-flex-between flex-wrap gap-15">
+                                                <div class="bd-course-price">
+                                                    <span class="current-price">$2000.00</span>
+                                                </div>
+                                                <div class="bd-course-rating-wrap d-flex align-items-center gap-10">
+                                                    <div class="bd-course-rating-icon fs-14 d-flex rating-color">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="bd-course-rating-text">
+                                                        <span>4.9 (380)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bd-course-full-border"></div>
+                                            <div class="btn-wrap d-flex align-items-center justify-content-between">
+                                                <div class="bd-course-author">
+                                                    <div class="thumb"><img src="assets/images/avatar/avatar.webp" alt="author">
+                                                    </div>
+                                                    <div class="name"><a href="instructor-details.html">Michael Lee</a></div>
+                                                </div>
+                                                <div class="bd-course-btn">
+                                                    <a class="bd-text-btn" href="courses-details.html">Enroll Now
+                                                        <span class="box-icon">
+                                                <i class="fa-regular fa-arrow-right-long first-icon"></i>
+                                                <i class="fa-regular fa-arrow-right-long second-icon"></i>
+                                            </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider dots pagination -->
+                            <div class="bd-course-pagination has-primary bd-dots-pagination justify-content-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- related courses area end -->
+
+    </main>
+    <!-- Body main wrapper end -->
+
+    <!-- footer area start -->
+    <footer class="bd-footer-area fix">
+        <div class="bd-footer-area-main-content section-space theme-bg-05">
+            <div class="container">
+                <div class="row gy-30 justify-content-between">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-12">
+                        <div class="bd-footer-widget footer-1-col-1">
+                            <div class="bd-footer-widget-content">
+                                <div class="bd-footer-widget-logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/Metacore_Logo.png" alt="image">
+                                    </a>
+                                </div>
+                                <p class="bd-footer-widget-description">Transform your career with Metacore’s expert-led IT training.
+                                    Enroll in our cutting-edge courses and gain the skills to thrive in today’s digital world. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="bd-footer-widget footer-1-col-2">
+                            <h6 class="bd-footer-widget-title">Our Branches</h6>
+                            <div class="bd-footer-widget-links list-none">
+                                <ul>
+                                    <li class="underline"><a href="https://maps.app.goo.gl/KY4sau5cT5vyHpgXA">Panjim Office: 4th Floor, Office No. 401, Ambrosia, Patto Centre, Panaji, Goa 403001</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="bd-footer-widget footer-1-col-2">
+                            <h6 class="bd-footer-widget-title">Our Branches</h6>
+                            <div class="bd-footer-widget-links list-none">
+                                <ul>
+                                    <li class="underline">Phone: <br>
+                                        <a href=tel:919373478923>+91 9373478923</a></li>
+                                    <li class="underline">Email: <br>
+                                        <a href="mailto:metacorecomputeracademy@gmail.com">metacorecomputeracademy@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-12">
+                        <div class="bd-footer-widget footer-1-col-4">
+                            <h6 class="bd-footer-widget-title mb-20">Stay Connected</h6>
+                            <div class="bd-footer-from-content mb-20">
+                                <div class="bd-footer-social">
+                                    <div class="theme-social social-brand-color">
+                                        <ul class="social-icon-list">
+                                            <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                            </li>
+                                            <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li><a class="instagram" href="https://www.instagram.com/metacorecomputeracademy/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                            <li><a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bd-footer-copyright-area pt-25 pb-20">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="bd-footer-copyright text-center">
+                    <p class="underline">
+                        © Copyright <span id="year"></span> By
+                        <a href="https://service.avanteia.com/" style="color: rgb(200, 0, 0);">Avanteia</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top -->
+    <div class="backtotop-wrap cursor-pointer">
+        <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Backtotop end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/plugins/nice-select.min.js"></script>
+    <script src="assets/js/vendor/ajax-form.js"></script>
+    <script src="assets/js/plugins/easypie.js"></script>
+    <script src="assets/js/vendor/purecounter.js"></script>
+    <script src="assets/js/plugins/nouislider.min.js"></script>
+    <script src="assets/js/plugins/apexcharts.min.js"></script>
+    <script src="assets/js/plugins/typed.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -33,6 +33,27 @@
     height: 100%;
     object-fit: cover;
     }
+
+    .bd-banner-bg-image {
+    background-image: url('assets/images/banner/banner-2/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* use 'fixed' if you want parallax effect */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Push it behind the content */
+}
+
+.bd-banner-area {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px; /* adjust based on design */
+}
+
 </style>
 
 </head>
@@ -299,49 +320,35 @@
 
         <!-- banner area start -->
         <section class="bd-banner-area">
-            
-                        <div>
-                            <div class="bd-banner-bg-image" data-background="assets/images/banner/banner-2/banner-2-img-.webp">
-                                <img src="assets/images/banner/banner-2/background.jpg" alt="img">
+    <div class="bd-banner-bg-image"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-6 col-xl-8">
+                <div class="bd-banner-content-two text-center">
+                    <div class="bd-banner-subtitle mb-10">find your course here</div>
+                    <h1 class="bd-banner-title white-text mb-25">Empowering Minds, Shaping Futures</h1>
+                    <div class="bd-banner-form">
+                        <div class="form-list">
+                            <div class="form-list-item">
+                                <span class="icon"><i class="fa-solid fa-check"></i></span>
+                                <p class="description">500+ Students</p>
                             </div>
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-xxl-6 col-xl-8">
-                                        <div class="bd-banner-content-two text-center">
-                                            <div class="bd-banner-subtitle mb-10">find your course here</div>
-                                            <h1 class="bd-banner-title white-text mb-25">Empowering Minds, Shaping
-                                                Futures</h1>
-                                            <div class="bd-banner-form">
-                                                <div class="form-list">
-                                                    <div class="form-list-item">
-                                                        <span class="icon"><i class="fa-solid fa-check"></i></span>
-                                                        <p class="description">500+ Students</p>
-                                                    </div>
-                                                    <div class="form-list-item">
-                                                        <span class="icon"><i class="fa-solid fa-check"></i></span>
-                                                        <p class="description">50+ Programs</p>
-                                                    </div>
-                                                    <div class="form-list-item">
-                                                        <span class="icon"><i class="fa-solid fa-check"></i></span>
-                                                        <p class="description">10+ Professor</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="form-list-item">
+                                <span class="icon"><i class="fa-solid fa-check"></i></span>
+                                <p class="description">50+ Programs</p>
+                            </div>
+                            <div class="form-list-item">
+                                <span class="icon"><i class="fa-solid fa-check"></i></span>
+                                <p class="description">10+ Professor</p>
                             </div>
                         </div>
-                    
-                <!-- navigation button start -->
-                <!-- <div class="bd-banner-navigation d-none d-xl-block">
-                    <div class="bd-banner-navigation-btn-two">
-                        <button class="banner-navigation-prev"><i class="fa-regular fa-angle-left"></i></button>
-                        <button class="banner-navigation-next"><i class="fa-regular fa-angle-right"></i></button>
                     </div>
-                </div> -->
-                <!-- navigation button end -->
-        </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
         <!-- banner area start -->
 
         <!-- feature area start -->
@@ -431,34 +438,10 @@
                 </div>
                 <div class="row g-30 justify-content-between">
                     <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="bd-about-wrapper style-two">
-                            <div class="bd-about-thumb-inner">
-                                <div class="bd-about-thumb-left">
-                                    <div class="bd-about-experience">
-                                        <h3 class="bd-about-experience-title"><span data-purecounter-duration="1"
-                                                data-purecounter-end="20" class="purecounter">20</span>+</h3>
-                                        <p>Years of Academic Excellence</p>
-                                    </div>
-                                    <div class="bd-about-thumb">
-                                        <img src="images/ai.jpg" alt="Academic Excellence">
-                                    </div>
-                                </div>
-                                <div class="bd-about-thumb-left">
-                                    <div class="bd-about-thumb has-small">
-                                        <img src="images/robot.jpg" alt="Student Success">
-                                    </div>
-                                    <div class="bd-about-review">
-                                        <div class="d-flex flex-wrap align-items-center gap-15 mb-10">
-                                            <div class="bd-about-review-user">
-                                                <img src="assets/images/user/user-01.webp" alt="Student">
-                                            </div>
-                                            <div class="bd-about-review-info">
-                                                <h3 class="bd-about-review-title"><span data-purecounter-duration="1"
-                                                        data-purecounter-end="30" class="purecounter">30</span>K+</h3>
-                                            </div>
-                                        </div>
-                                        <p>Satisfied Alumni Worldwide</p>
-                                    </div>
+                        <div class="bd-about-thumb-inner">
+                            <div class="bd-about-thumb-left">
+                                <div class="bd-about-thumb has-small">
+                                    <img src="images/robot.jpg" alt="Student Success" style="height: 500px; width: 600px;">
                                 </div>
                             </div>
                         </div>

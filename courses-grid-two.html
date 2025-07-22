@@ -20,11 +20,38 @@
     <link rel="stylesheet" href="assets/css/vendor/spacing.css">
     <link rel="stylesheet" href="assets/css/plugins/apexcharts.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
     <style>
-        .bd-course-thumb img {
+    .bd-course-thumb img {
     width: 430px;
     height: 250px;
     object-fit: cover;
+    }
+
+    /* Make all cards equal height using flexbox */
+.bd-course-grid-area .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bd-course-grid-area .col-xl-4,
+.bd-course-grid-area .col-lg-6,
+.bd-course-grid-area .col-md-6,
+.bd-course-grid-area .col-sm-6 {
+    display: flex;
+}
+
+.bd-course-wrapper.style-two {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bd-course-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
     </style>
